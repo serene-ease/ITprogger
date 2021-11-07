@@ -1,0 +1,17 @@
+
+// $count = count($_POST['name']);
+// if ($count < 3)
+// {echo 'Имя долнжо состоять из 3 или более символов'.'<br>';}
+#$name = str/* получаю из формы */
+#$CarMarks=array(BMW, Mecedes, Audi, Ford, Fiat, Kia, Acura, Lexus, RollsRolls, Toyota, Mazda, Nissan, Volvo);
+
+// if count($Name) < 3;
+//  = count($email);
+// if $count < 5;
+//
+// $i = 0
+//
+// while ($i<=$count)
+// {if = @ else $i ++} // Generator may be here function gener () yield
+//
+// 

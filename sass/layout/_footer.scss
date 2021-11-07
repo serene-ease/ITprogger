@@ -1,0 +1,189 @@
+.footer {
+  background-color: var(--accent-background-color);
+
+  padding-top: var(--mobile-divider);
+  padding-bottom: var(--mobile-divider);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: var(--tablet-divider);
+    padding-bottom: var(--tablet-divider);
+    text-align: center;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--desktop-divider);
+    padding-bottom: var(--desktop-divider);
+  }
+  & .container {
+    // Tablet
+    @media screen and (min-width: 768px) {
+      // display: flex;
+    }
+    // Desktop
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: start;
+      // vertical-align: top;
+    }
+  }
+}
+
+.adress__list {
+  // Tablet
+  @media screen and (min-width: 768px) {
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.adress__link {
+  @include font(14px, 24px);
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  font-style: normal;
+  text-decoration: none;
+  ///////////////////////
+  margin-bottom: 8px;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    // margin-bottom: 8px;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+  .adress__item:first-child & {
+    color: white;
+  }
+}
+.form-f__email {
+  @include font(16px, 20px);
+  color: var(--third-text-color);
+  background-color: var(--accent-background-color);
+  padding-left: 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  height: 50px;
+
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    // flex-basis: 450px;
+    width: 450px;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+.footer__btn {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    margin-left: 10px;
+  }
+}
+.tablet {
+  // Tablet
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: self-start;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
+}
+.tablet__box {
+  // Tablet
+  @media screen and (min-width: 768px) {
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+
+    &:last-child {
+      margin-left: 70px;
+    }
+  }
+}
+.box__form {
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    align-items: start;
+  }
+}
+.form__footer {
+  // Tablet
+  @media screen and (min-width: 768px) {
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
+}
+/////////////////////// Margins //////////////////////
+.footer {
+  & ul {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+    // // Tablet
+    // @media screen and (min-width: 768px) {
+    // }
+    // // Desktop
+    // @media screen and (min-width: 1200px) {
+    // }
+  }
+
+  & .logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+
+    // Tablet
+    @media screen and (min-width: 768px) {
+    }
+    // Desktop
+    @media screen and (min-width: 1200px) {
+    }
+  }
+}
+
+.form-f__email {
+  margin-bottom: 20px;
+  // Tablet
+  @media screen and (min-width: 768px) {
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
+}

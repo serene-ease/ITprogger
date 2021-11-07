@@ -1,0 +1,19 @@
+.logo {
+  @include font(26px, 31px, 700, 0.03em, Raleway);
+
+  color: var(--accent-color);
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 88px;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+.logo__header {
+  color: black;
+}
+.logo__footer {
+  color: white;
+}

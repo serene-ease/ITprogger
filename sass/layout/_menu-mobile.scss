@@ -1,0 +1,134 @@
+.menu__mobile {
+  // padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+
+  position: fixed;
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 1;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    // display: none;
+  }
+  // // Desktop
+  // @media screen and (min-width: 1200px) {
+  //   display: none;
+  // }
+  &.is-open {
+    transform: translateX(0);
+  }
+  & .container {
+    display: flex;
+    height: 100%;
+    min-height: 450px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.m-menu__btn {
+  position: absolute;
+
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: 0px solid transparent;
+
+  width: 40px;
+  height: 40px;
+
+  & > svg {
+    fill: currentColor;
+    width: 40px;
+    height: 40px;
+  }
+  &.call {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      // left: 425px;
+      right: 15px;
+      top: 15px;
+    }
+  }
+  &.close {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      // left: 425px;
+      right: 15px;
+      top: 15px;
+    }
+  }
+
+  // Tablet
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  // // Desktop
+  // @media screen and (min-width: 1200px) {
+  //   display: none;
+  // }
+}
+
+.mobile__page {
+  @include font(40px, 47px, 500, 0.02em);
+  color: var(--primary-text-color);
+}
+.mobile__contact {
+  @include font(24px, 28px, 500, 0.02em);
+  color: var(--secondary-text-color);
+
+  &:hover,
+  &:focus {
+    transform: scale(2, 2);
+  }
+}
+.mobile__item1:first-child {
+  margin-top: 48px;
+}
+.mobile__item1:not(last-child),
+.mobile__item2:not(last-child) {
+  margin-top: 32px;
+}
+.mobile__item2:last-child {
+  margin-bottom: 60px;
+}
+.social__link {
+  @include font(18px, 22px, 500, 0.02em);
+  color: var(--accent-color);
+
+  margin-left: 20px;
+}
+.social {
+  display: flex;
+  margin-left: -20px;
+}
+.social__item:not(:last-child) {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: 22px;
+    width: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+.mobile-current {
+  color: var(--accent-color);
+}
+.menu__mobile.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.menu__mobile.is-hidden .menu__mobile {
+  transform: scale(2);
+}

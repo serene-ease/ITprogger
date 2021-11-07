@@ -1,0 +1,17 @@
+.button {
+  @include font(16px, 30px, 700, 0.06em);
+  color: var(--third-text-color);
+
+  width: 200px;
+  height: 50px;
+
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:focus {
+    outline: 0px solid var(--accent-color);
+  }
+}
